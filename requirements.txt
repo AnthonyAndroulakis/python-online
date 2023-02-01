@@ -1,8 +1,5 @@
 bqplot
-ipycanvas>=0.9.1
-ipyevents>=2.0.1
-ipyleaflet
-ipympl>=0.8.2
+ipyniivue
 ipywidgets>=8.0.0,<9
 jupyterlab~=3.5.1
 jupyterlab-drawio
