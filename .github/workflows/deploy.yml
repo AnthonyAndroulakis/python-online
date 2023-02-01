@@ -21,6 +21,14 @@ jobs:
       - name: Install the dependencies
         run: |
           python -m pip install -r requirements.txt
+      - name: Install ipyniivue
+        run: |
+          git clone --recurse-submodules https://github.com/niivue/ipyniivue.git
+          cd ipyniivue
+          yarn
+          pip install -e .
+          yarn run build
+          cd ../
       - name: Build the JupyterLite site
         run: |
           cp README.md content
